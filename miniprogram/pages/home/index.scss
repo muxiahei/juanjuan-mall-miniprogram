@@ -1,0 +1,22 @@
+/* pages/home/index.wxss */
+// {
+//   box-sizing: border-box;
+//   padding-bottom: calc(env(safe-area-inset-bottom) + 96rpx);
+// }
+
+.home-page-header {
+  width: 100%;
+  background: linear-gradient(#fff, #f5f5f5);
+  // display: block;
+  // padding: 0 24rpx;
+  .swiper-wrap {
+    padding: 0 24rpx;
+  }
+}
+
+.home-page-container {
+  // background: #b33030;
+  // height: 100rpx;
+  // display: block;
+  // padding: 0 24rpx;
+}

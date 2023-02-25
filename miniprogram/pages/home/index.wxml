@@ -1,0 +1,28 @@
+<!--pages/home/index.wxml-->
+<view class="home-page-header">
+  <view class="search">
+    <t-search model:value="{{value}}" placeholder="搜索预设文案" />
+  </view>
+
+  <view class="swiper-wrap">
+    <t-swiper
+      current="{{current}}"
+      autoplay="{{autoplay}}"
+      duration="{{duration}}"
+      interval="{{interval}}"
+      navigation="{{navigation}}"
+      list="{{swiperList}}"
+      loop="{{false}}"
+    >
+  </t-swiper>
+  </view>
+</view>
+
+<view class="home-page-container">
+  <t-tabs defaultValue="{{0}}" space-evenly="{{false}}" bind:change="onTabsChange" bind:click="onTabsClick">
+    <t-tab-panel wx:for="{{6}}" wx:key="index" label="选项" value="{{index}}" />
+  </t-tabs>
+
+  <goods-list ></goods-list>
+
+</view>
