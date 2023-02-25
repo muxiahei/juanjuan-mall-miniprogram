@@ -13,7 +13,7 @@ Component({
       type: String,
       value: '',
       observer: (id:String) => {
-        genIndependentID(id);
+        globalThis.genIndependentID(id);
       },
     },
     thresholds: {
